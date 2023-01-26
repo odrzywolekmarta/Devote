@@ -27,7 +27,7 @@ struct ContentView: View {
                     }
                 }
                 .onDelete(perform: deleteItems)
-            }
+            } // list
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
@@ -39,7 +39,7 @@ struct ContentView: View {
                 }
             }
             Text("Select an item")
-        }
+        } // navigation view
     }
 
     private func addItem() {
