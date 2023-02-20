@@ -18,6 +18,7 @@
 		2D2690872981933D00B936C9 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D2690842981933D00B936C9 /* sound-ding.mp3 */; };
 		2D269094298AAC9B00B936C9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D269093298AAC9B00B936C9 /* Constants.swift */; };
 		2D269096298AFA6600B936C9 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D269095298AFA6600B936C9 /* HideKeyboardExtension.swift */; };
+		2D2690A529A1290D00B936C9 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2690A429A1290D00B936C9 /* BackgroundImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		2D26908E2982B8AE00B936C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2D269093298AAC9B00B936C9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2D269095298AFA6600B936C9 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
+		2D2690A429A1290D00B936C9 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				2D269071298152D600B936C9 /* ContentView.swift */,
+				2D2690A429A1290D00B936C9 /* BackgroundImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D269094298AAC9B00B936C9 /* Constants.swift in Sources */,
+				2D2690A529A1290D00B936C9 /* BackgroundImageView.swift in Sources */,
 				2D269079298152D700B936C9 /* Persistence.swift in Sources */,
 				2D269096298AFA6600B936C9 /* HideKeyboardExtension.swift in Sources */,
 				2D269072298152D600B936C9 /* ContentView.swift in Sources */,
