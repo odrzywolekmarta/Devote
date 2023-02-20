@@ -114,6 +114,9 @@ struct ContentView: View {
                     EditButton()
                 }
             } // toolbar
+            .background(
+            BackgroundImageView()
+            )
             .background(backgroundGradient.ignoresSafeArea(.all))
         } // navigation view
     }
