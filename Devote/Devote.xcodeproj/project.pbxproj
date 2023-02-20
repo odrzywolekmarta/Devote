@@ -19,6 +19,7 @@
 		2D269094298AAC9B00B936C9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D269093298AAC9B00B936C9 /* Constants.swift */; };
 		2D269096298AFA6600B936C9 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D269095298AFA6600B936C9 /* HideKeyboardExtension.swift */; };
 		2D2690A529A1290D00B936C9 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2690A429A1290D00B936C9 /* BackgroundImageView.swift */; };
+		2D2690A729A4205E00B936C9 /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2690A629A4205E00B936C9 /* NewTaskItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		2D269093298AAC9B00B936C9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2D269095298AFA6600B936C9 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 		2D2690A429A1290D00B936C9 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
+		2D2690A629A4205E00B936C9 /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				2D269071298152D600B936C9 /* ContentView.swift */,
 				2D2690A429A1290D00B936C9 /* BackgroundImageView.swift */,
+				2D2690A629A4205E00B936C9 /* NewTaskItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				2D269072298152D600B936C9 /* ContentView.swift in Sources */,
 				2D26907C298152D700B936C9 /* Devote.xcdatamodeld in Sources */,
 				2D269070298152D600B936C9 /* DevoteApp.swift in Sources */,
+				2D2690A729A4205E00B936C9 /* NewTaskItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
