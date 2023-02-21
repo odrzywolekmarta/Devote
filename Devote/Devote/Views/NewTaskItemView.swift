@@ -15,6 +15,7 @@ struct NewTaskItemView: View {
         task.isEmpty
     }
     @Binding var isShowing: Bool
+    @AppStorage("isDarkMode") private var isDarkMode: Bool = false
         
     //MARK: - FUNCTIONS
     private func addItem() {
@@ -47,7 +48,7 @@ struct NewTaskItemView: View {
                     .foregroundColor(.pink)
                     .font(.system(size: 24, weight: .bold, design: .rounded))
                     .padding()
-                    .background(Color(UIColor.systemGray6))
+                    .background(isDarkMode ? Color(UIColor.tertiarySystemBackground) : Color(UIColor.secondarySystemBackground))
                     .cornerRadius(10)
                 
                 Button {
@@ -64,11 +65,10 @@ struct NewTaskItemView: View {
                 .background(isButtonDisabled ? Color.blue : Color.pink)
                 .cornerRadius(10)
             } // vstack
-            .padding()
             .padding(.horizontal)
             .padding(.vertical, 20)
             .background(
-                Color.white
+                isDarkMode ? Color(UIColor.secondarySystemBackground) : Color.white
             )
             .cornerRadius(16)
             .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.65), radius: 24)
