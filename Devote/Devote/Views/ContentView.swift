@@ -84,7 +84,12 @@ struct ContentView: View {
             //MARK: - NEW TASK ITEM
                 if showNewTaskItem {
                     BlankView()
-                    NewTaskItemView()
+                        .onTapGesture {
+                            withAnimation {
+                                showNewTaskItem = false
+                            }
+                        }
+                    NewTaskItemView(isShowing: $showNewTaskItem)
                 } 
             } // zstack
             .scrollContentBackground(.hidden)
