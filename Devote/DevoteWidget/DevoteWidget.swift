@@ -41,6 +41,14 @@ struct SimpleEntry: TimelineEntry {
 struct DevoteWidgetEntryView : View {
     var entry: Provider.Entry
 
+    @Environment(\.widgetFamily) var widgetFamily
+    var fontStyle: Font {
+        if widgetFamily == .systemSmall {
+            return .system(.footnote, design: .rounded)
+        } else {
+            return .system(.headline, design: .rounded)
+        }
+    }
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -51,18 +59,21 @@ struct DevoteWidgetEntryView : View {
                     .scaledToFit()
                 Image("logo")
                     .resizable()
-                    .frame(width: 36, height: 36)
+                    .frame(width: widgetFamily != .systemSmall ? 56 : 36,
+                           height: widgetFamily != .systemSmall ? 56 : 36)
                     .offset(
                         x: (geometry.size.width / 2) - 20,
                         y: (geometry.size.height / -2) + 20
                     )
-                    .padding(.top, 12)
-                    .padding(.trailing, 12)
+                    .padding(.top,
+                             widgetFamily != .systemSmall ? 32 : 12)
+                    .padding(.trailing,
+                             widgetFamily != .systemSmall ? 32 : 12)
                 
                 HStack {
                     Text("Just Do It")
                         .foregroundColor(.white)
-                        .font(.system(.footnote, design: .rounded))
+                        .font(fontStyle)
                         .fontWeight(.bold)
                         .padding(.horizontal, 12)
                         .padding(.vertical, 4)
@@ -71,6 +82,9 @@ struct DevoteWidgetEntryView : View {
                                 .blendMode(.overlay)
                         )
                     .clipShape(Capsule())
+                    if widgetFamily != .systemSmall {
+                        Spacer()
+                    }
                 } // hstack
                 .padding()
                 .offset(y: (geometry.size.height / 2) - 24)
