@@ -53,11 +53,17 @@ struct NewTaskItemView: View {
                 
                 Button {
                     addItem()
+                    playSound(sound: "sound-ding", type: "mp3")
                 } label: {
                     Spacer()
                     Text("SAVE")
                         .font(.system(size: 24, weight: .bold, design: .rounded))
                     Spacer()
+                }
+                .onTapGesture {
+                    if isButtonDisabled {
+                        playSound(sound: "sound-tap", type: "mp3")
+                    }
                 }
                 .disabled(isButtonDisabled)
                 .padding()
